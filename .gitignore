@@ -1,0 +1,11 @@
+*.DS_Store
+/cross-compile-bin
+/mirai/debug
+/mirai/tools/enc
+.idea
+/cmake-build-debug
+/mirai/release
+/loader/loader.dbg
+/loader/output.txt
+/loader/input.txt
+/CMakeLists.txt
