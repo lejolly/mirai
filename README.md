@@ -3,6 +3,9 @@
 The Mirai malware modified for use on NCL/a virtual/simulated environment. 
 
 How to setup: [setup-instructions.md](setup-instructions.md)
+Requires: 
+- MySQL
+- Go (for building)
 
 How to attack: [attack-instructions.md](attack-instructions.md)
 
