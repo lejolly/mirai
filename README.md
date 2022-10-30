@@ -2,15 +2,15 @@
 
 The Mirai malware modified for use on NCL/a virtual/simulated environment. 
 
-How to setup: [setup-instructions.md](setup-instructions.md)
+How to setup: [`setup-instructions.md`](setup-instructions.md)
 
 Requires: 
 - MySQL
 - Go (for building)
 
-How to attack: [attack-instructions.md](attack-instructions.md)
+How to attack: [`attack-instructions.md`](attack-instructions.md)
 
-Scanner and Loader instructions: [scanner-and-loader-instructions.md](scanner-and-loader-instructions.md)
+Scanner and Loader instructions: [`scanner-and-loader-instructions.md`](scanner-and-loader-instructions.md)
 
 ## Credits
 - [Mirai-Source-Code](https://github.com/jgamblin/Mirai-Source-Code)

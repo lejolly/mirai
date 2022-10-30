@@ -26,7 +26,7 @@ We'll need to update the `sources.list` to get `apt-get` working (only applies t
 ### Installation Instructions for Running cnc (assumes you have already built it)
 1. install mysql: `sudo apt-get install mysql-server mysql-client`
   * make sure you set the root password as `root` during the installation
-2. run [scripts/db.sql](scripts/db.sql) in the mysql shell
+2. run [`scripts/db.sql`](scripts/db.sql) in the mysql shell
   ```
   <in the scripts folder>
   $ mysql -u root -p
@@ -47,13 +47,13 @@ We'll need to update the `sources.list` to get `apt-get` working (only applies t
 4. restart mysql: `sudo service mysql restart`
 5. run the cnc: `sudo ./cnc`
 6. in order to access the cnc, use `telnet localhost` (assumes you are telnet-ing on the cnc machine)
-7. use `username: root` and `password: root` to login (as defined in [scripts/db.sql](scripts/db.sql))
-8. refer to [attack-instructions.md](attack-instructions.md) for how to launch an attack
+7. use `username: root` and `password: root` to login (as defined in [`scripts/db.sql`](scripts/db.sql))
+8. refer to [`attack-instructions.md`](attack-instructions.md) for how to launch an attack
 
 ### Instructions for Running bot (assumes you have already built it)
 1. run the bot: `sudo ./debug/mirai.dbg <cnc ip> <local ip> <callback ip> <enable scanner 0/1>` (assumes you have built the debug version)
   * e.g. `sudo ./debug/mirai.dbg 10.0.0.1 10.0.0.2 10.0.0.1 0`
-  * you can use [mirai/demo-bot.sh](mirai/demo-bot.sh) that automatically finds the ip address of eth0 (be sure to change the hardcoded cnc and callback ip addresses)
+  * you can use [`mirai/demo-bot.sh`](mirai/demo-bot.sh) that automatically finds the ip address of eth0 (be sure to change the hardcoded cnc and callback ip addresses)
 
 ### Installation Instructions for Building
 1. install golang
@@ -62,7 +62,7 @@ We'll need to update the `sources.list` to get `apt-get` working (only applies t
   $ sudo apt-get update
   $ sudo apt-get install golang
   ```
-2. run [scripts/cross-compile.sh](scripts/cross-compile.sh) (needs root)
+2. run [`scripts/cross-compile.sh`](scripts/cross-compile.sh) (needs root)
 3. add export paths in `~/.bashrc` (you may need to restart bash after this step)
   ```
   add the following lines:
@@ -74,7 +74,7 @@ We'll need to update the `sources.list` to get `apt-get` working (only applies t
 5. install go packages
   * `go get github.com/go-sql-driver/mysql`
   * `go get github.com/mattn/go-shellwords`
-6. build using [mirai/build.sh](mirai/build.sh)
+6. build using [`mirai/build.sh`](mirai/build.sh)
   * e.g. `mirai/build.sh debug telnet`
   * only the debug, telnet version has been tested
   * output files will be in the `debug` folder, with `cnc` and `mirai.dbg` (the bot)
