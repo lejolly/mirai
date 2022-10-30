@@ -12,6 +12,9 @@ How to attack: [attack-instructions.md](attack-instructions.md)
 
 Scanner and Loader instructions: [scanner-and-loader-instructions.md](scanner-and-loader-instructions.md)
 
+## Run it in Docker
+See [docker-mirai](https://github.com/lejolly/docker-mirai)
+
 ## Credits
 - [Mirai-Source-Code](https://github.com/jgamblin/Mirai-Source-Code)
 - [Anna-senpai](https://hackforums.net/showthread.php?tid=5420472)
